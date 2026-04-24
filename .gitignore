@@ -1,0 +1,26 @@
+# IDEs and System files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Legacy/Mirrored site files
+hts-cache/
+hts-log.txt
+globalgypsum.in/
+img1.wsimg.com/
+www.google.com/
+backblue.gif
+cookies.txt
+fade.gif
+# Root index.html is the HTTrack redirect, usually not needed in the new repo
+index.html
+
+# PHP/Dependencies
+vendor/
+composer.lock
+
+# Sensitive configuration
+new-website/mail-config.php
+!new-website/mail-config.php.example
