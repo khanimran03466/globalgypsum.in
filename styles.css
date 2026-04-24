@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+header img {
+  height: 60px !important;
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.bg-grid {
+  background-image:
+    radial-gradient(circle at 25% 20%, rgba(37, 99, 235, 0.2) 0%, transparent 30%),
+    radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.16) 0%, transparent 35%),
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: auto, auto, 26px 26px, 26px 26px;
+  background-position: center;
+}
+
+.product-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(37, 99, 235, 0.8);
+  background: rgba(37, 99, 235, 0.1);
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  color: rgb(203, 213, 225);
+}
+
+.content-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+
+.content-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(37, 99, 235, 0.4);
+}
+
+.content-card p,
+.content-card li,
+.content-card td {
+  color: rgb(203, 213, 225);
+}
+
+.content-card h3,
+.content-card h4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.table-lite {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-lite td,
+.table-lite th {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+}
+
+.nav-link-active {
+  color: rgb(96, 165, 250);
+}
+
+.section-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(15, 23, 42, 0.9);
+  color: white;
+  border-radius: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: rgba(37, 99, 235, 0.9);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  background: #25d366;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+  z-index: 60;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.4);
+}

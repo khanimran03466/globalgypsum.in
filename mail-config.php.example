@@ -1,0 +1,12 @@
+<?php
+return [
+    'host' => 'smtp.yourprovider.com',
+    'port' => 587,
+    'encryption' => 'tls', // tls or ssl
+    'username' => 'your-smtp-username',
+    'password' => 'your-smtp-password',
+    'from_email' => 'no-reply@globalgypsum.in',
+    'from_name' => 'Global Gypsum Website',
+    'to_email' => 'info@globalgypsum.in',
+    'to_name' => 'Global Gypsum',
+];

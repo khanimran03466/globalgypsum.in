@@ -1,0 +1,7 @@
+{
+    "name": "global-gypsum/website",
+    "description": "Global Gypsum Website",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
